@@ -10,7 +10,7 @@ Currently we're only testing on:
 we haven't tested any other version of GTA San Andreas.
 
 # Build
-- Assuming you have Visual Studio 2015.
+- Assuming you have Visual Studio 2019.
 - Clone the repository with `git clone https://github.com/Huga22118/Improved-GTA-SA-Discord-RPC`.
 - Open `discord-plugin.sln`.
 - Build the source code.
