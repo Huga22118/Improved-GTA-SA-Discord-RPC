@@ -1,9 +1,7 @@
 # Improved-GTA-SA-Discord-RPC
 Forked Version of [GTA SA Discord RPC](https://github.com/Brunoo16/gtasa-discord-plugin).
 
-This plugin is made by [Brunoo16](https://github.com/Brunoo16).
-
-And modified by [Huga22118](https://github.com/Huga22118).
+This plugin is made by [Brunoo16](https://github.com/Brunoo16) and modified by [Huga22118](https://github.com/Huga22118).
 
 # Version
 Currently we're only testing on:
