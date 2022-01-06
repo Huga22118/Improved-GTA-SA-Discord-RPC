@@ -7,7 +7,7 @@ This plugin is made by [Brunoo16](https://github.com/Brunoo16) and modified by [
 Currently we're only testing on:
 - GTA San Andreas 1.0 US
 
-we haven't tested any other version of GTA San Andreas.
+We haven't tested any other version of GTA San Andreas.
 
 # Build
 - Assuming you have Visual Studio 2019.
