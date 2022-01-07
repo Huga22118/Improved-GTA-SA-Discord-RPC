@@ -10,8 +10,6 @@
 #include "Game.h"
 
 
-//#define APPLICATION_ID "698510493282992139"
-
 static const char* APPLICATION_ID = "698510493282992139";
 
 std::string cp1251_to_utf8(const char* str);
