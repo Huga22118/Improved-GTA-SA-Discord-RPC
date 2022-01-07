@@ -10,6 +10,10 @@ std::string Game::GetTime() {
 	return std::to_string(*reinterpret_cast<BYTE*>(0xB70153)) + ":" + minstr;
 }
 
+int Game::GetPlayerMoney() {
+	return *reinterpret_cast<int*>(0xB7CE50);
+}
+
 int Game::GetCurrentWeapon()
 {
 	return *reinterpret_cast<int*>(0xBAA410);

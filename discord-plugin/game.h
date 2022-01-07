@@ -8,6 +8,7 @@ class Game
 public:
 
 	std::string GetTime();
+	int GetPlayerMoney();
 	int GetCurrentWeapon();
 
 };
@@ -62,6 +63,57 @@ const std::string weaponNames[] =
 	{ "Thermal Goggles" },
 	{ "Parachute" },
 	{ "Fake Pistol" }
+};
+
+const std::string weaponIcons[] =
+{
+	{ "fist" },
+	{ "brassknuckleicon" },
+	{ "golfclubicon" },
+	{ "nitestickicon" },
+	{ "knifecuricon" },
+	{ "baticon" },
+	{ "shovelicon" },
+	{ "poolcueicon" },
+	{ "katanaicon" },
+	{ "chnsawicon" },
+	{ "dildo1icon" },
+	{ "dildo2icon" },
+	{ "vibe1icon" },
+	{ "vibe2icon" },
+	{ "flowericon" },
+	{ "caneicon" },
+	{ "grenadeicon" },
+	{ "teargasicon" },
+	{ "molotovicon" },
+	{ " " },
+	{ " " },
+	{ " " },
+	{ "colt45icon" },
+	{ "silencedicon" },
+	{ "desert_eagleicon" },
+	{ "chromegunicon" },
+	{ "sawnofficon" },
+	{ "shotgspaicon" },
+	{ "micro_uziicon" },
+	{ "mp5lngicon" },
+	{ "ak47icon" },
+	{ "m4icon" },
+	{ "tec9icon" },
+	{ "cuntgunicon" },
+	{ "snipericon" },
+	{ "rocketlaicon" },
+	{ "heatseekicon" },
+	{ "flameicon" },
+	{ "minigunicon" },
+	{ "satchelicon" },
+	{ "bombicon" },
+	{ "spraycanicon" },
+	{ "fire_exicon" },
+	{ "cameraicon" },
+	{ "gogglesicon" },
+	{ "gogglesicon" },
+	{ "paraicon" },
 };
 
 extern Game* pGame;

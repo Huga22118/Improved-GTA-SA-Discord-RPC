@@ -8,14 +8,6 @@ void MainThread()
 		Sleep(350);
 
 	pGame = new Game();
-	std::string details, state, smallImageText, largeImageText;
-
-	DiscordRichPresence drp;
-	
-	drp = { 0 };
-	drp.startTimestamp = time(0);
-
-	Discord_Initialize(APPLICATION_ID, 0, 0, 0);
 
 	HMODULE module = NULL;
 
@@ -25,18 +17,30 @@ void MainThread()
 	}
 	else
 	{
+		Discord_Initialize(APPLICATION_ID, 0, 0, 0);
+
+		std::string details, state, smallImageText, largeImageText;
+
+		DiscordRichPresence drp;
+
+		drp = { 0 };
+		drp.startTimestamp = time(0);
+
 	while (1)
 	{
 
 		if (*reinterpret_cast<int*>(0xB6F5F0))
 		{
 
-			details = "Weapons: " + weaponNames[pGame->GetCurrentWeapon()];
+			details = "Money: $" + std::to_string(pGame->GetPlayerMoney());
 			state = "Time: " + pGame->GetTime();
-			largeImageText = "Modified by Huga";
+			smallImageText = weaponNames[pGame->GetCurrentWeapon()];
+			largeImageText = "Modified GTA SA Discord RPC";
 
 			drp.largeImageKey = "game_icon";
 			drp.largeImageText = largeImageText.c_str();
+			drp.smallImageText = smallImageText.c_str();
+			drp.smallImageKey = weaponIcons[pGame->GetCurrentWeapon()].c_str();;
 			drp.details = details.c_str();
 			drp.state = state.c_str();
 
